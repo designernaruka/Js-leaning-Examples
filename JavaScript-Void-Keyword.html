@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript - Void Keyword</title>
+  <script type="text/javascript" language="javascript">
+    function getValue() {
+       var a,b,c;
+
+       a = void ( b = 5, c = 7 );
+       document.write('a = ' + a + ' b = ' + b + ' c = ' + c );
+    }
+  </script>
+</head>
+<body>
+  <p>Click the following, This won't react at all...</p>
+  <a href="javascript:void(alert('Warning!!!'))">Click Me !</a>
+  <br />
+  <a href="javascript:void(0)">Click me for non anchor!</a>
+  <br />
+  <input type="button" value="Click Me" onclick="getValue();" name="">
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript - Events</title>
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    function sayHello() {
+      alert("Hello World")
+    }
+    function validation() {
+      all validation goes here
+        .........
+      return either true or false
+    }
+    function over() {
+      document.write ("Mouse Over");
+    }
+    function out() {
+      document.write ("Mouse Out");
+    }
+  </script>
+  <p>
+    Click the following button and see result
+  </p>
+  <form method="Post" action = "t.cgi" onsubmit="return validate()">
+    <input type="button" value="Say Hello Alert" onclick="sayHello()" name="">
+    <input type="submit" value="submit" name="">
+  </form>
+  <p>
+    Bring your mouse inside the division to see the result
+  </p>
+  <div onmouseover = "over()" onmouseout = "out()">
+     <h2 style="border: solid 1px #fff000; height: 200px; width: 200px;"> This is inside the division </h2>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript - Functions</title>
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    function sayHi() {
+      alert("Hero Alert");
+    }
+  </script>
+  <p>Click the following button to call the function</p>
+  <form>
+    <input type="button" onclick="sayHi()" value="Say Hi Alert" name="">
+  </form>
+  <p>Use Different text in write method and then try...</p>
+  <script type="text/javascript" language="javascript">
+    function sayHello(name, age) {
+      document.write(name + " is" + age + " years old");
+    }
+  </script>
+  <p>
+    Click the following button to call the function.
+  </p>
+  <form>
+    <input type="button" onclick="sayHello('Bhanu', 79)" value="Say Hello" name="">
+  </form>
+  <p>
+    Use different parameters inside the function and then try...
+  </p>
+  <script type="text/javascript" language="javascript">
+    function concatenate(first, last) {
+      var full;
+      full = first + last;
+      return full;
+    }
+    function secondFunction() {
+      var result;
+      result = concatenate('Bhanu', 'Naruka');
+      document.write(result);
+    }
+  </script>
+  <p>
+    Click the following button to call the function
+  </p>
+  <form>
+    <input type="button" onclick="secondFunction()" value="Call Function" name="">
+  </form>
+  <p>
+    User Different parameters inside the function and then try...
+  </p>
+</body>
+</html>

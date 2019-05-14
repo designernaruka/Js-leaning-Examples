@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript - Objects Overview Defining Methods for an Object</title>
+  <script type="text/javascript" language="javascript">
+    function addPrice(amount) {
+      this.price = amount;
+    }
+
+    function book(title, author) {
+      this.title = title;
+      this.author = author;
+      this.addPrice = addPrice;
+    }
+  </script>
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    var myBook = new book("Do Alfaz", "Ram Singh");
+    myBook.addPrice(100);
+    document.write("Book title is : " + myBook.title + "<br />");
+    document.write("Book author is :" + myBook.author + "<br />");
+    document.write("Book price is : " + myBook.price + "<br />");
+  </script>
+</body>
+</html>

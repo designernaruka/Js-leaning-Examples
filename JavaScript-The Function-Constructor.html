@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript - The Function() Constructor</title>
+  <script type="text/javascript">
+    var func = new Function("a", "b", "return a*b");
+    function secondFunction() {
+      var result;
+      result = func(10, 20);
+      document.write(result);
+    }
+  </script>
+</head>
+<body>
+  <p>Click the following button to call the function</p>
+  <form>
+    <input type="button" onclick="secondFunction()" value="Call Function" name="">
+  </form>
+  <p>
+    Use the Different parameters inside the function and then try...
+  </p>
+</body>
+</html>

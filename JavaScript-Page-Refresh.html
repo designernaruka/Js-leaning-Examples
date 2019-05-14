@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Page Refresh</title>
+  <script type="text/javascript" language="javascript">
+    function AutoRefresh( t ) {
+      setTimeout("location.reload(true);", t)
+    }
+  </script>
+</head>
+<body onload="javascript: AutoRefresh(5000);">
+  <p>This page will refresh every 5 seconds.</p>
+</body>
+</html>

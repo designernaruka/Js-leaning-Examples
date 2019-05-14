@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Setting Cookies Expiry Date</title>
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    function WriteCookie() {
+      var now = new Date();
+      now.setMonth( now.getMonth() + 1);
+      cookievalue = escape(document.myform.customer.value) + ";"
+
+      document.cookie = "name" + cookievalue;
+      document.cookie = "expires=" + now.toUICString() + ";"
+      document.write ("Setting Cookies : " + "name=" + cookievalue );
+    }
+  </script>
+  <form name = "myform" action = "">
+    Enter Name : <input type="text" name="customer" />
+    <input type = "button" value = "Set Cookies" onclick="WriteCookie()" name="">
+  </form>
+</body>
+</html>

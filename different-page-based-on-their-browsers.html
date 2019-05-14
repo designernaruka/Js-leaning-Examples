@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect your site visitors onto a different page based on their browsers.</title>
+</head>
+<body>
+  <script type="text/javascript" language="javascript">
+    var browsername = navigator.appName;
+    if( browsername == "Chrome" ) {
+      window.location = "https://gaana.com/playlist/gaana-dj-punjabi-top-50-1";
+    } else if ( browsername =="Microsoft Internet Explorer") {
+      window.location = "http://www.location.com/ie.htm";
+    } else {
+      window.location = "http://www.location.com/other.htm";
+    }
+  </script>
+</body>
+</html>
